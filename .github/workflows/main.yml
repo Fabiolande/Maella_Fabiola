@@ -33,7 +33,7 @@ jobs:
       - name: Run Data and ML Pipeline 
         run: | 
           python src/load_data.py 
-          python src/preprocess.py 
+          python src/prepocess.py 
           python src/train.py # La version avec MLflow 
           python src/evaluate.py
           
