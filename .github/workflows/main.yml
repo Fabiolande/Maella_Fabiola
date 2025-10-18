@@ -2,9 +2,9 @@
 name: CI-ML-Pipeline 
 # Déclencheur : s'exécute à chaque push sur la branche main 
 on: 
-push: 
-branches: [ main ] 
-workflow_dispatch: # Permet de lancer manuellement le workflow depuis l'interface GitHub 
+  push: 
+    branches: [ main ] 
+  workflow_dispatch: # Permet de lancer manuellement le workflow depuis l'interface GitHub 
 jobs: 
   train-and-evaluate: 
     # Le type de runner sur lequel le job va s'exécuter 
@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4 
  
       # Étape 2: Configurer l'environnement Python 
-      - name: Set up Python 3.9 
+      - name: Set up Python 3.12 
         uses: actions/setup-python@v5 
         with: 
           python-version: '3.12' 
