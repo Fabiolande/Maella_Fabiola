@@ -8,8 +8,7 @@ __pycache__/
 *$py.class
 
 # Data / large files
-data/
-*.csv
+data/testdata.manual.2009.06.14.csv
 
 # MLflow
 mlruns/
