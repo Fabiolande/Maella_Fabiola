@@ -1,0 +1,23 @@
+# Virtual environments
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data / large files
+data/
+*.csv
+
+# MLflow
+mlruns/
+
+# Editor / OS
+.vscode/
+.env
+.DS_Store
+
+# Test / cache
+.pytest_cache/
